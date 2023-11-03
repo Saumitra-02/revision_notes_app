@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% block content %}
+  <h2>Note Details</h2>
+  <p>Extracted Text: {{ note.extracted_text }}</p>
+  <p>Summary: {{ note.summary }}</p>
+  <img src="{{ note.image.url }}" alt="Note Image">
+{% endblock %}

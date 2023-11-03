@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Multiline Text Box</title>
+</head>
+<body>
+    <form action="/notes/" method="post"></form>
+        {% csrf_token %}
+        <textarea rows="10" cols="30" name="message" placeholder="Enter your note here..."></textarea>
+        <br>
+        <input type="submit" value="Submit">
+    </form>
+
+  
+</body>
+</html>

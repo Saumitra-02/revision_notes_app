@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Notes</title>
+</head>
+<body>
+    {% for note in notes %}
+        <p>{{ note }}</p>
+        <br />
+    {% endfor %}
+    <br />
+    <a href="{% url 'home' %}">Back to Home</a>
+</body>
+</html>
